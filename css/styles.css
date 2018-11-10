@@ -1,11 +1,35 @@
 header {
   height: 100vh;
-  background: url("../img/hero.jpeg") no-repeat center;
+  background: black;
   margin-bottom: 5rem;
 }
 
 .hero {
   position: relative;
+  background: black;
   top: 40%;
   transform: translateY(-50%);
+  z-index: 100;
+}
+
+.hero a {
+  color: white;
+  opacity: 0.5;
+  transition: opacity 0.5s ease-in;
+}
+
+.hero a:hover {
+  color: white;
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+
+.fa-2x {
+  font-size: 1.25rem;
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
