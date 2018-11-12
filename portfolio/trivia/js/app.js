@@ -41,6 +41,14 @@ fetch(url)
       <input value="False" name="option" type="radio">
       <p>False</p>`);
     }
+    // Pick Choice
+    function pickChoice(e) {
+      if (e.target.innerHTML === "True") {
+        e.target.previousElementSibling.checked = "True";
+      } else if (e.target.innerHTML === "False") {
+        e.target.previousElementSibling.checked = "True";
+      }
+    }
     // Check Answer
     function checkAns() {
       let choice = document.querySelector("input[name=option]:checked").value;
@@ -53,6 +61,8 @@ fetch(url)
         points <= 0 ? (points = 0) : points--;
         setQuestion();
       }
+      // Remove checked status
+      document.querySelector("input[name=option]:checked").checked = false;
       // Check game Status
       gameStatus();
     }
@@ -76,6 +86,7 @@ fetch(url)
     // Event Listeners
     submitBtn.addEventListener("click", checkAns);
     playAgainBtn.addEventListener("click", restartGame);
+    optionList.addEventListener("click", pickChoice);
   })
 
   // Catch possible errors
