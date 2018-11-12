@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #333;
+  color: aliceblue;
+  padding-top: 15vh;
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+  border-radius: 10px;
+  padding: 2rem 5rem;
+}
+
+.score {
+  display: block;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.score-number {
+  color: yellow;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+.options {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  width: 165px;
+  color: #fff;
+  padding: 1rem 3rem;
+  margin: 1rem 1.5rem;
+  font-size: 2.5rem;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0px 10px 2px rgba(0, 0, 0, 0.25);
+}
+
+.btn:active {
+  transform: translateY(4px);
+  box-shadow: 0px 5px 2px rgba(0, 0, 0, 0.25);
+}
+
+#rock {
+  background-color: hsl(360, 80%, 50%);
+  transition: background-color ease-in-out 0.25s;
+}
+
+#rock:hover {
+  background-color: hsl(360, 80%, 55%);
+}
+
+#paper {
+  background-color: hsl(120, 35%, 50%);
+  transition: background-color ease-in-out 0.25s;
+}
+
+#paper:hover {
+  background-color: hsl(120, 50%, 55%);
+}
+
+#scissors {
+  background-color: hsl(245, 80%, 50%);
+  transition: background-color ease-in-out 0.25s;
+}
+
+#scissors:hover {
+  background-color: hsl(245, 80%, 55%);
+}
+
+#playAgain {
+  margin: 2.5rem auto;
+  background-color: gold;
+  font-size: 3rem;
+  display: none;
+}
+
+.selected {
+  color: yellow;
+}
+
+.result {
+  text-transform: uppercase;
+  color: yellow;
+}

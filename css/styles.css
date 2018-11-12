@@ -4,9 +4,12 @@ header {
   margin-bottom: 5rem;
 }
 
+.bg-black {
+  background: #000;
+}
+
 .hero {
   position: relative;
-  background: black;
   top: 40%;
   transform: translateY(-50%);
   z-index: 100;
@@ -28,8 +31,36 @@ header {
   font-size: 1.25rem;
 }
 
+.btn-down {
+  position: relative;
+  top: 175px;
+}
+
 #particles-js {
   position: absolute;
   width: 100%;
   height: 100%;
+}
+
+.badges {
+  margin: 1rem auto;
+}
+
+.image-me {
+  width: 200px;
+  margin: auto;
+}
+
+.contact-info {
+  font-size: 1.5em;
+  margin-bottom: 1rem;
+}
+
+.social-media .btn {
+  transition: font-size, 0.25s ease-in-out;
+}
+
+.social-media .btn:hover {
+  font-size: 0.5rem;
+  transition: font-size, 0.25s ease-in-out;
 }
