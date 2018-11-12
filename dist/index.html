@@ -12,13 +12,13 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/styles.css">
-    <title>James Zambrano || Front-End Developer</title>
+    <title>James Zambrano || Web Developer</title>
   </head>
   <body>
     <!-- Header & Navigation Bar -->
     <header>
       <div id="particles-js"></div>
-      <nav class="navbar navbar-expand-lg navbar-dark">
+      <nav class="navbar fixed-bottom navbar-expand-lg navbar-dark bg-black">
         <div class="container">
           <a class="navbar-brand" href="#home"><i class="fas fa-code"></i> James Zambrano</a>
           <button
@@ -58,7 +58,7 @@
       <div class="container text-center p-5 hero">
         <div class="row hero-text">
           <div class="col-12">
-            <h1 class="font-weight-bold text-white">James Zambrano // Web Developer </h1>
+            <h1 class="font-weight-bold text-white">James Zambrano // Web Developer Jr </h1>
             <p class="lead">
               I'm a self-taught developer with a background in science!
             </p>
@@ -92,6 +92,9 @@
               ><i class="fab fa-free-code-camp fa-3x"></i
             ></a>
           </div>
+          <div class="btn-down mx-auto">
+          <a href="#about"><i class="fas fa-chevron-down fa-4x text-center"></i></a>
+        </div>
         </div>
       </div>
     </header>
@@ -104,7 +107,7 @@
 
       <div class="row">
         <div class="col-12">
-            <h2 id="about">About Me</h2>
+            <h2 id="about" class="display-4 pb-4">{{About Me}}</h2>
             <p class="lead">Let me tell you a few things...</p>
         </div>
       </div>
@@ -115,7 +118,7 @@
             When I was 14 years old, unaware of what I was doing, I gave my
             first baby steps in web development; playing with Dreamweaver and
             Macromedia Flash I ended up making a website for my high school,
-            since then I have always been in love with the internet and
+            since then I have always been fascinated with the internet and
             technology.
           </p>
 
@@ -152,9 +155,9 @@
       <ul>
         <li>HTML, CSS, JavaScript, PHP</li>
       </ul>
-      <h4 class="lead">Frameworks</h4>
+      <h4 class="lead">Main Toolkit</h4>
       <ul>
-        <li>Bootstrap 4, Wordpress, Xenforo</li>
+        <li>Bootstrap 4, Flexbox, jQuery, SASS, Grid, Wordpress, React.js(Learning)</li>
       </ul>
 
     </div>
@@ -162,7 +165,7 @@
     <div class="col-12 col-lg-6">
       <h4 class="lead">Other Tools</h4>
       <ul>
-        <li>Git, Responsive Design, Photoshop, jQuery, SEO, SASS</li>
+        <li>Git, Responsive Design, Photoshop, Adobe XD, SEO, NPM</li>
       </ul>
       <h4 class="lead">Human Languages</h4>
       <ul>
@@ -175,7 +178,7 @@
 
       <div class="row">
           <div class="col-12">
-              <h2 id="portfolio">Portfolio</h2>
+              <h2 id="portfolio" class="display-4 pb-4">{{Portfolio}}</h2>
               <p class="lead">Stuff I've made at work or by myself</p>
           </div>
         </div>
@@ -197,7 +200,14 @@
                   <p class="card-text">
                     A product site made with Wordpress. The theme was designed and created by myself based on the previous theme.
                   </p>
+                  <div class="badges">
+                    <span class="badge badge-success">Wordpress</span>
+                    <span class="badge badge-warning">MySQL</span>
+                    <span class="badge badge-danger">PHP</span>
+                  </div>
                   <a href="https://rocketstreams.tv/" target="_blank" class="btn btn-primary"><i class="fas fa-eye"></i> Website</a>
+                  <a href="#!" class="btn btn-secondary disabled"><i class="fab fa-github fa-2x"></i
+                    > Github</a>
                 </div>
               </div>   
         </div>
@@ -210,7 +220,15 @@
                   <p class="card-text">
                     A site made with Wordpress and Xenforo. I designed the layout and customized it according to the client's needs. 
                   </p>
+                  <div class="badges">
+                    <span class="badge badge-success">Wordpress</span>
+                    <span class="badge badge-info">Xenforo</span>
+                    <span class="badge badge-warning">MySQL</span>
+                    <span class="badge badge-danger">PHP</span>
+                  </div>
                   <a href="https://www.excelmale.com/" target="_blank" class="btn btn-primary"><i class="fas fa-eye"></i> Website</a>
+                  <a href="#!" class="btn btn-secondary disabled"><i class="fab fa-github fa-2x"></i
+                    > Github</a>
                 </div>
               </div>   
         </div>
@@ -222,7 +240,14 @@
                   <p class="card-text">
                     A blog made with Wordpress. I fully customized the theme from scratch.
                   </p>
+                  <div class="badges">
+                    <span class="badge badge-success">Wordpress</span>
+                    <span class="badge badge-warning">MySQL</span>
+                    <span class="badge badge-danger">PHP</span>
+                  </div>
                   <a href="https://argentinosenaustralia.com/" target="_blank" class="btn btn-primary"><i class="fas fa-eye"></i> Website</a>
+                  <a href="#!" class="btn btn-secondary disabled"><i class="fab fa-github fa-2x"></i
+                    > Github</a>
                 </div>
               </div>   
         </div>
@@ -239,14 +264,18 @@
       <section class="row mt-3 mb-5">
         <div class="col-12 col-lg-4">
             <div class="card mb-4">
-                <img class="card-img-top" src="https://via.placeholder.com/300x180" alt="Project">
+                <img class="card-img-top" src="img/projects-work/rpsgame.png" alt="Project">
                 <div class="card-body">
-                  <h4 class="card-title">Card title</h4>
+                  <h4 class="card-title">Rock-Paper-Scissors</h4>
                   <p class="card-text">
-                    Some quick example text to build on the card title
-                    and make up the bulk of the card's content.
+                    A simple app based on the popular probability game.
                   </p>
-                  <a href="#!" class="btn btn-primary"><i class="fas fa-eye"></i> Website</a>
+                  <div class="badges">
+                    <span class="badge badge-success">HTML</span>
+                    <span class="badge badge-danger">CSS</span>
+                    <span class="badge badge-warning">JS</span>
+                  </div>
+                  <a href="#!" class="btn btn-primary"><i class="fas fa-eye"></i> Demo</a>
                   <a href="#!" class="btn btn-secondary"><i class="fab fa-github fa-2x"></i
                     > Github</a>
                 </div>
@@ -255,14 +284,18 @@
 
         <div class="col-12 col-lg-4">
             <div class="card mb-4">
-                <img class="card-img-top" src="https://via.placeholder.com/300x180" alt="Project">
+                <img class="card-img-top" src="img/projects-work/fylo.png" alt="Project">
                 <div class="card-body">
-                  <h4 class="card-title">Card title</h4>
+                  <h4 class="card-title">Fylo Landing Page</h4>
                   <p class="card-text">
-                    Some quick example text to build on the card title
-                    and make up the bulk of the card's content.
+                    A landing page for a fictional app called Fylo with email validation.
                   </p>
-                  <a href="#!" class="btn btn-primary"><i class="fas fa-eye"></i> Website</a>
+                  <div class="badges">
+                    <span class="badge badge-success">HTML</span>
+                    <span class="badge badge-danger">Sass</span>
+                    <span class="badge badge-warning">JS</span>
+                  </div>
+                  <a href="#!" class="btn btn-primary"><i class="fas fa-eye"></i> Demo</a>
                   <a href="#!" class="btn btn-secondary"><i class="fab fa-github fa-2x"></i
                     > Github</a>
                 </div>
@@ -270,14 +303,79 @@
         </div>
         <div class="col-12 col-lg-4 mb-4">
             <div class="card mb-4">
-                <img class="card-img-top" src="https://via.placeholder.com/300x180" alt="Project">
+                <img class="card-img-top" src="img/projects-work/triviagame.png" alt="Project">
                 <div class="card-body">
-                  <h4 class="card-title">Card title</h4>
+                  <h4 class="card-title">Trivia Game</h4>
                   <p class="card-text">
-                    Some quick example text to build on the card title
-                    and make up the bulk of the card's content.
+                    A trivia game using Open Trivia Database API, it uses ES6 promises.
                   </p>
-                  <a href="#!" class="btn btn-primary"><i class="fas fa-eye"></i> Website</a>
+                  <div class="badges">
+                    <span class="badge badge-success">HTML</span>
+                    <span class="badge badge-danger">CSS</span>
+                    <span class="badge badge-warning">JS</span>
+                    <span class="badge badge-info">API</span>
+                    <span class="badge badge-success">ES6</span>
+                  </div>
+                  <a href="#!" class="btn btn-primary"><i class="fas fa-eye"></i> Demo</a>
+                  <a href="#!" class="btn btn-secondary"><i class="fab fa-github fa-2x"></i
+                    > Github</a>
+                </div>
+              </div>   
+        </div>
+
+        <div class="col-12 col-lg-4">
+            <div class="card mb-4">
+                <img class="card-img-top" src="img/projects-work/micropostapp.png" alt="Project">
+                <div class="card-body">
+                  <h4 class="card-title">Microposting App</h4>
+                  <p class="card-text">
+                    A twitter-like CRUD app, it uses a json server api to emulate a local database. Built using ES6 modules and transpiled to ES5 using Babel.  
+                  </p>
+                  <div class="badges">
+                    <span class="badge badge-warning">JS</span>
+                    <span class="badge badge-info">Babel</span>
+                    <span class="badge badge-success">ES6</span>
+                  </div>
+                  <a href="#!" class="btn btn-primary"><i class="fas fa-eye"></i> Demo</a>
+                  <a href="#!" class="btn btn-secondary"><i class="fab fa-github fa-2x"></i
+                    > Github</a>
+                </div>
+              </div>   
+        </div>
+
+        <div class="col-12 col-lg-4">
+            <div class="card mb-4">
+                <img class="card-img-top" src="img/projects-work/flexboxpanel.png" alt="Project">
+                <div class="card-body">
+                  <h4 class="card-title">Flexbox Panels</h4>
+                  <p class="card-text">
+                    Fully responsive interactive panels, built using flexbox and grid.
+                  </p>
+                  <div class="badges">
+                    <span class="badge badge-success">HTML</span>
+                    <span class="badge badge-danger">CSS</span>
+                    <span class="badge badge-warning">JS</span>
+                  </div>
+                  <a href="#!" class="btn btn-primary"><i class="fas fa-eye"></i> Demo</a>
+                  <a href="#!" class="btn btn-secondary"><i class="fab fa-github fa-2x"></i
+                    > Github</a>
+                </div>
+              </div>   
+        </div>
+        <div class="col-12 col-lg-4 mb-4">
+            <div class="card mb-4">
+                <img class="card-img-top" src="img/projects-work/tasklist.png" alt="Project">
+                <div class="card-body">
+                  <h4 class="card-title">Task List App</h4>
+                  <p class="card-text">
+                    A task list app made with Materialize CSS and vanilla JS. Persists data into the browser's local storage.
+                  </p>
+                  <div class="badges">
+                    <span class="badge badge-success">HTML</span>
+                    <span class="badge badge-danger">CSS</span>
+                    <span class="badge badge-warning">JS</span>
+                  </div>
+                  <a href="#!" class="btn btn-primary"><i class="fas fa-eye"></i> Demo</a>
                   <a href="#!" class="btn btn-secondary"><i class="fab fa-github fa-2x"></i
                     > Github</a>
                 </div>
@@ -289,38 +387,59 @@
 
       <div class="row">
           <div class="col-12">
-              <h2 id="contact">Contact Me</h2>
+              <h2 id="contact" class="display-4 pb-4">{{Contact Me}}</h2>
               <p class="lead">Get in touch if you want to work together...</p>
           </div>
         </div>
 
       <section class="row mt-3 mb-5">
         <div class="col-12 col-lg-6 my-5">
+          <div class="image-me">
             <img class="img-thumbnail rounded-circle" src="img/me.jpg" alt="Thumbnail image">
+          </div>
         </div>
 
-        <div class="col-12 col-lg-6 my-5">
-            <form>
-                <div class="form-group">
-                  <label for="formGroupExampleInput">Your Name</label>
-                  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="John Doe">
-                </div>
-
-                <div class="form-group">
-                  <label for="formGroupExampleInput2">Your Email</label>
-                  <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="jdoe@example.com">
-
-                  <div class="form-group">
-                      <label for="formGroupExampleInput2">Your Message</label>
-                      <textarea class="form-control" id="formGroupExampleInput2" placeholder="Tell me something..."></textarea>
-                    </div>
-                </div>
-              </form>
+        <div class="col-12 col-lg-6 my-5 pt-lg-3 text-center text-lg-left">
+          <div class="contact-info">
+            <p><i class="fas fa-phone"></i>+5493412270050</p>
+            <p><i class="fas fa-envelope"></i> zambranojamesj@gmail.com</p>
+            <p><i class="fas fa-road"></i> Pasco 76, <em>CABA</em>, Buenos Aires</p>
+          </div>
+          <div class="social-media">
+            <a
+              href="https://twitter.com/RenniakJ"
+              class="btn btn-default btn-sm"
+              role="button"
+              target="_blank"
+              ><i class="fab fa-twitter fa-3x"></i
+            ></a>
+            <a
+              href="https://github.com/renniak"
+              class="btn btn-default btn-sm"
+              role="button"
+              target="_blank"
+              ><i class="fab fa-github fa-3x"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/jameszambrano"
+              class="btn btn-default btn-sm"
+              role="button"
+              target="_blank"
+              ><i class="fab fa-linkedin fa-3x"></i
+            ></a>
+            <a
+              href="https://www.freecodecamp.org/renniak"
+              class="btn btn-default btn-sm"
+              role="button"
+              target="_blank"
+              ><i class="fab fa-free-code-camp fa-3x"></i
+            ></a>
+          </div>
         </div>
 
       </section>
     </main>
-
+<div class="bg-dark pt-3">
     <footer class="container">
       <div class="row">
         <div class="col-12">
@@ -329,7 +448,7 @@
         </div>
       </div>
     </footer>
-
+  </div>
     <script src="js/jquery3.3.1.min.js"></script>
     <script src="js/popper1.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
