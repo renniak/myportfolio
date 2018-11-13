@@ -15,7 +15,7 @@ particlesJS("particles-js", {
       anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false }
     },
     size: {
-      value: 2,
+      value: 1,
       random: true,
       anim: { enable: false, speed: 40, size_min: 0.1, sync: false }
     },
@@ -41,7 +41,7 @@ particlesJS("particles-js", {
     detect_on: "window",
     events: {
       onhover: { enable: true, mode: "repulse" },
-      onclick: { enable: true, mode: "push" },
+      onclick: { enable: false, mode: "push" },
       resize: true
     },
     modes: {
