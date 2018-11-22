@@ -10,7 +10,7 @@ header {
 
 .hero {
   position: relative;
-  top: 40%;
+  top: 50%;
   transform: translateY(-50%);
   z-index: 100;
 }
