@@ -1,4 +1,9 @@
-// Particles JS
+// +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+// +                            +
+// -     Particles Js           -
+// +                            +
+// -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
 particlesJS("particles-js", {
   particles: {
     number: { value: 80, density: { enable: true, value_area: 800 } },
@@ -55,7 +60,11 @@ particlesJS("particles-js", {
   retina_detect: true
 });
 
-// Smooth Scrolling
+// +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+// +                            +
+// -     Smooth Scrolling       -
+// +                            +
+// -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 
 // Select all links with hashes
 $('a[href*="#"]')
@@ -98,3 +107,38 @@ $('a[href*="#"]')
       }
     }
   });
+
+// +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+// +                            +
+// -     Form Validation        -
+// +                            +
+// -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+const parent = document.getElementById("parent");
+const name = document.getElementById("name");
+const email = document.getElementById("email");
+const subject = document.getElementById("subject");
+const message = document.getElementById("message");
+const submit = document.getElementById("submit");
+
+// Validation Event
+
+submit.addEventListener("click", e => {
+  if (
+    name.value === "" ||
+    email.value === "" ||
+    subject.value === "" ||
+    message.value === ""
+  ) {
+    // Stop Submittig
+    e.preventDefault();
+    // Show Error Message
+    parent.innerHTML = `
+      <div class="alert alert-danger my-2">
+        <span>Please fill all the fields</span>
+      </div>
+    `;
+    // Hide message after 3 seconds
+    setTimeout(() => (parent.innerHTML = ""), 3000);
+  }
+});

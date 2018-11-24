@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
+  <head><meta http-equiv="Content-Type" content="text/html; charset=gb18030">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -50,6 +50,9 @@
               <li class="nav-item">
                 <a class="nav-link" href="#contact">Contact Me</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="files/jzambranocv.pdf">Download CV</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -83,13 +86,6 @@
               role="button"
               target="_blank"
               ><i class="fab fa-linkedin fa-3x"></i
-            ></a>
-            <a
-              href="https://www.freecodecamp.org/renniak"
-              class="btn btn-default btn-sm"
-              role="button"
-              target="_blank"
-              ><i class="fab fa-free-code-camp fa-3x"></i
             ></a>
           </div>
           <div class="btn-down d-none d-md-block mx-auto">
@@ -394,18 +390,11 @@
 
       <section class="row mt-3 mb-5">
         <div class="col-12 col-lg-6 my-5">
-          <div class="image-me">
+          <div class="image-me mb-3">
             <img class="img-thumbnail rounded-circle" src="img/me.jpg" alt="Thumbnail image">
           </div>
-        </div>
 
-        <div class="col-12 col-lg-6 my-5 pt-lg-3 text-center text-lg-left">
-          <div class="contact-info">
-            <p><i class="fas fa-phone"></i>+5493412270050</p>
-            <p><i class="fas fa-envelope"></i> zambranojamesj@gmail.com</p>
-            <p><i class="fas fa-road"></i> Pasco 76, <em>CABA</em>, Buenos Aires</p>
-          </div>
-          <div class="social-media">
+          <div class="social-media text-center">
             <a
               href="https://twitter.com/RenniakJ"
               class="btn btn-default btn-sm"
@@ -421,22 +410,39 @@
               ><i class="fab fa-github fa-3x"></i
             ></a>
             <a
-              href="https://www.linkedin.com/jameszambrano"
+              href="https://www.linkedin.com/in/jameszambrano/"
               class="btn btn-default btn-sm"
               role="button"
               target="_blank"
               ><i class="fab fa-linkedin fa-3x"></i
             ></a>
-            <a
-              href="https://www.freecodecamp.org/renniak"
-              class="btn btn-default btn-sm"
-              role="button"
-              target="_blank"
-              ><i class="fab fa-free-code-camp fa-3x"></i
-            ></a>
           </div>
         </div>
+        <div class="col-12 col-lg-6 my-5 bg-light p-3">
+          <div id="parent"></div>
+          <form action="contactform.php" method="post"> 
+            <div class="form-group">
+              <label for="name">*Name: </label>
+              <input type="text" class="form-control" id="name" placeholder="Enter your name...">
+            </div>
+    
+            <div class="form-group">
+              <label for="email">*Email: </label>
+              <input type="email" class="form-control" id="email" placeholder="example@gmail.com">
+            </div>
 
+            <div class="form-group">
+              <label for="subject">*Subject: </label>
+              <input type="text" name="subject" class="form-control" id="subject" placeholder="Enter subject...">
+            </div>
+    
+          <div class="form-group">
+            <label for="message">*Message: </label>
+            <textarea class="form-control" name="message" id="message" placeholder="Write a message"></textarea>
+          </div>
+          <button type="submit" name="submit" id="submit" class="btn btn-primary btn-block">SEND MAIL</button>
+        </form>
+        </div>
       </section>
     </main>
 <div class="bg-dark pt-3">
