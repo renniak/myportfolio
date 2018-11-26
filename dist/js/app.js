@@ -113,7 +113,7 @@ $('a[href*="#"]')
 // -     Form Validation        -
 // +                            +
 // -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-
+const form = document.getElementById("form");
 const parent = document.getElementById("parent");
 const name = document.getElementById("name");
 const email = document.getElementById("email");
@@ -124,14 +124,14 @@ const submit = document.getElementById("submit");
 // Validation Event
 
 submit.addEventListener("click", e => {
+  // Stop Submittig behavior
+  e.preventDefault();
   if (
     name.value === "" ||
     email.value === "" ||
     subject.value === "" ||
     message.value === ""
   ) {
-    // Stop Submittig
-    e.preventDefault();
     // Show Error Message
     parent.innerHTML = `
       <div class="alert alert-danger my-2">
@@ -140,5 +140,41 @@ submit.addEventListener("click", e => {
     `;
     // Hide message after 3 seconds
     setTimeout(() => (parent.innerHTML = ""), 3000);
+  } else {
+    const dataString =
+      "name=" +
+      name.value +
+      "&email=" +
+      email.value +
+      "&subject=" +
+      subject.value +
+      "&message=" +
+      message.value;
+
+    // Ajax to submit form
+    $.ajax({
+      type: "POST",
+      url: "contactform.php",
+      data: dataString,
+      cache: false
+    }).done(function() {
+      clearFields();
+      // Show Success Message
+      parent.innerHTML = `
+      <div class="alert alert-success my-2">
+        <span>Email successfully sent!</span>
+      </div>
+    `;
+      // Hide message after 3 seconds
+      setTimeout(() => (parent.innerHTML = ""), 3000);
+    });
   }
 });
+
+// Clear fields function
+function clearFields() {
+  name.value = "";
+  email.value = "";
+  subject.value = "";
+  message.value = "";
+}

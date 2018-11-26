@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head><meta http-equiv="Content-Type" content="text/html; charset=gb18030">
+  <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -418,9 +418,10 @@
             ></a>
           </div>
         </div>
+        
         <div class="col-12 col-lg-6 my-5 bg-light p-3">
           <div id="parent"></div>
-          <form action="contactform.php" method="post"> 
+          <form id="form"> 
             <div class="form-group">
               <label for="name">*Name: </label>
               <input type="text" class="form-control" id="name" placeholder="Enter your name...">
@@ -440,6 +441,7 @@
             <label for="message">*Message: </label>
             <textarea class="form-control" name="message" id="message" placeholder="Write a message"></textarea>
           </div>
+          
           <button type="submit" name="submit" id="submit" class="btn btn-primary btn-block">SEND MAIL</button>
         </form>
         </div>
